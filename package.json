@@ -1,0 +1,30 @@
+{
+  "name": "color-dropper",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "rsbuild dev --open",
+    "build": "rsbuild build",
+    "preview": "rsbuild preview",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.4.0",
+    "@rsbuild/core": "^0.7.2",
+    "@rsbuild/plugin-react": "^0.7.2",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "8.x",
+    "eslint-plugin-react": "^7.34.2",
+    "globals": "^15.3.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.5",
+    "prettier": "3.3.0",
+    "typescript": "^5.4.2",
+    "typescript-eslint": "^7.11.0"
+  }
+}
