@@ -48,7 +48,7 @@ export const ColorDropper = () => {
 			</div>
 
 			{imageURL && (
-				<div className={classes.canvasWrapper}>
+				<div className={classes.canvasWrapper} key={imageURL}>
 					<ImageCanvas />
 
 					{showPicker && <Picker />}
