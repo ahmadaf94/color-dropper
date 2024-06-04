@@ -1,4 +1,6 @@
-# Rsbuild Project
+# Color Dropper Project
+demo:
+https://main--color-dropper.netlify.app/
 
 ## Setup
 
