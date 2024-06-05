@@ -18,7 +18,11 @@ const FileInput = () => {
 
 	return (
 		<>
-			<button className={classes.uploadButton} onClick={handleClick}>
+			<button
+				className={classes.uploadButton}
+				onClick={handleClick}
+				data-testid="file-input"
+			>
 				Select Image
 			</button>
 
