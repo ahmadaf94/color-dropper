@@ -43,7 +43,9 @@ export const ColorDropper = () => {
 				{imageURL && <ColorPickerButton />}
 
 				{selectedColor && (
-					<span className={classes.selectedColor}>{selectedColor}</span>
+					<span className={classes.selectedColor} data-testid="selected-color">
+						{selectedColor}
+					</span>
 				)}
 			</div>
 

@@ -6,6 +6,7 @@
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
     "preview": "rsbuild preview",
+    "test:e2e": "playwright test --ui",
     "prepare": "husky"
   },
   "dependencies": {
@@ -18,9 +19,11 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.4.0",
+    "@playwright/test": "^1.44.1",
     "@rsbuild/core": "^0.7.2",
     "@rsbuild/plugin-react": "^0.7.2",
     "@rsbuild/plugin-svgr": "^0.7.2",
+    "@types/node": "^20.14.1",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "eslint": "8.x",

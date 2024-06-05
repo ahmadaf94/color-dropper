@@ -25,7 +25,11 @@ const ColorPickerButton = () => {
 	};
 
 	return (
-		<button className={classes.colorPickerButton} onClick={handleClick}>
+		<button
+			className={classes.colorPickerButton}
+			onClick={handleClick}
+			data-testid="color-picker-button"
+		>
 			<IconColorPicker />
 		</button>
 	);

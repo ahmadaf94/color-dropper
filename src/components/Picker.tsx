@@ -55,7 +55,12 @@ const Picker = () => {
 	const { handlePickColor, pickerColors, style, color } = usePicker();
 
 	return (
-		<div className={classes.container} style={style} onClick={handlePickColor}>
+		<div
+			className={classes.container}
+			style={style}
+			onClick={handlePickColor}
+			data-testid="picker"
+		>
 			{pickerColors && (
 				<table className={classes.colorTable}>
 					<tbody>
@@ -78,7 +83,9 @@ const Picker = () => {
 
 			<SelectedColorRing />
 
-			<div className={classes.colorCode}>{color}</div>
+			<div className={classes.colorCode} data-testid="picker-color">
+				{color}
+			</div>
 		</div>
 	);
 };
