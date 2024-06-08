@@ -15,7 +15,6 @@ const useStyles = createUseStyles({
 	},
 	canvasWrapper: {
 		maxWidth: "100%",
-		overflow: "hidden",
 		position: "relative",
 	},
 	buttonsContainer: {
