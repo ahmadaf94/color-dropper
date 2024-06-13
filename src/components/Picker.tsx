@@ -52,7 +52,8 @@ const useStyles = createUseStyles({
 
 const Picker = () => {
 	const classes = useStyles();
-	const { handlePickColor, pickerColors, style, color } = usePicker();
+	const { handlePickColor, pickerColors, style, color, cellBorder } =
+		usePicker();
 
 	return (
 		<div
@@ -64,14 +65,15 @@ const Picker = () => {
 			{pickerColors && (
 				<table className={classes.colorTable}>
 					<tbody>
-						{pickerColors.map((colorRow, index) => (
-							<tr key={index}>
-								{colorRow.map((colorCell, index) => (
+						{pickerColors.map((colorRow, rowIndex) => (
+							<tr key={rowIndex}>
+								{colorRow.map((colorCell, cellIndex) => (
 									<td
 										className={classes.colorCells}
-										key={index}
+										key={cellIndex}
 										style={{
 											backgroundColor: `rgba(${colorCell[0]}, ${colorCell[1]}, ${colorCell[2]}, ${colorCell[3]})`,
+											border: cellBorder(rowIndex, cellIndex),
 										}}
 									></td>
 								))}
